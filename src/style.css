@@ -1,0 +1,164 @@
+/* Estilos generales */
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: #f4f6f9; 
+    color: #333; 
+    margin: 0; 
+    padding: 40px; 
+}
+
+.max-container { 
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+
+h1, h2 { 
+    color: #2c3e50; 
+    text-align: center; /* Centramos los títulos para que vayan a juego con el diseño */
+}
+
+hr { 
+    border: 0; 
+    height: 1px; 
+    background: #ddd; 
+    margin: 30px 0; 
+}
+
+/* Tarjeta del Formulario */
+.form-card { 
+    background: #fff; 
+    padding: 24px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+    max-width: 500px; 
+    
+    /* Centrado horizontal con respecto a la tabla (max-container) */
+    margin: 0 auto 30px auto; 
+}
+
+/* Variante para forzar el centrado si fuera necesario en otras pantallas */
+.form-card-center {
+    margin: 0 auto; 
+}
+
+.form-group { 
+    margin-bottom: 15px; 
+}
+
+.form-group label { 
+    display: block; 
+    font-weight: 600; 
+    margin-bottom: 6px; 
+    font-size: 14px; 
+}
+
+.form-group input { 
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    font-size: 14px; 
+}
+
+.form-group input:focus { 
+    border-color: #3498db; 
+    outline: none; 
+}
+
+/* Botones de formulario */
+.btn-submit { 
+    background-color: #2ecc71; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 15px; 
+    font-weight: bold; 
+    width: 100%; 
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover { 
+    background-color: #27ae60; 
+}
+
+/* Variante azul para el botón de modificar */
+.btn-submit-edit {
+    background-color: #3498db;
+}
+
+.btn-submit-edit:hover {
+    background-color: #2980b9;
+}
+
+.btn-back { 
+    display: inline-block; 
+    margin-bottom: 20px; 
+    color: #7f8c8d; 
+    text-decoration: none; 
+    font-size: 14px; 
+}
+
+.btn-back:hover { 
+    color: #333; 
+}
+
+/* Tabla Estilizada */
+.table-container { 
+    background: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+    overflow: hidden; 
+}
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    text-align: left; 
+}
+
+th, td { 
+    padding: 12px 15px; 
+    border-bottom: 1px solid #eee; 
+}
+
+th { 
+    background-color: #34495e; 
+    color: white; 
+    font-weight: 600; 
+}
+
+tr:hover { 
+    background-color: #f9f9f9; 
+}
+
+/* Botones de Acción dentro de la tabla */
+.btn-action { 
+    text-decoration: none; 
+    padding: 5px 10px; 
+    border-radius: 4px; 
+    font-size: 13px; 
+    font-weight: 600; 
+    display: inline-block;
+    margin: 2px;
+}
+
+.btn-edit { 
+    background-color: #3498db; 
+    color: white; 
+}
+
+.btn-edit:hover { 
+    background-color: #2980b9; 
+}
+
+.btn-delete { 
+    background-color: #e74c3c; 
+    color: white; 
+}
+
+.btn-delete:hover { 
+    background-color: #c0392b; 
+}
