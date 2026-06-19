@@ -6,20 +6,20 @@
  */
 
 // Parámetros de configuración (Ajustar según las credenciales del entorno Docker/Host)
-$host    = 'db';             -- Nombre del servicio de la base de datos en Docker Compose
-$db      = 'crud_db';        -- Nombre de la base de datos
-$user    = 'guille';         -- Usuario de acceso
-$pass    = 'password123';    -- Contraseña de acceso
-$charset = 'utf8mb4';        -- Codificación para soportar caracteres especiales y acentos
+$host    = 'db';             // Nombre del servicio de la base de datos en Docker Compose
+$db      = 'crud';        // Nombre de la base de datos
+$user    = 'user';         // Usuario de acceso
+$pass    = '1234';           // Contraseña de acceso
+$charset = 'utf8mb4';        // Codificación para soportar caracteres especiales y acentos
 
 // Construcción del Data Source Name (DSN) necesario para PDO
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 
 // Opciones de configuración del Driver PDO para entornos de desarrollo y producción
 $options = [
-    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION, -- Lanza excepciones en caso de errores SQL
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,       -- Devuelve las filas como arrays asociativos
-    PDO::ATTR_EMULATE_PREPARES   => false,                  -- Desactiva la emulación; usa sentencias preparadas nativas
+    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION, // Lanza excepciones en caso de errores SQL
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,       // Devuelve las filas como arrays asociativos
+    PDO::ATTR_EMULATE_PREPARES   => false,                  // Desactiva la emulación; usa sentencias preparadas nativas
 ];
 
 try {

@@ -9,7 +9,7 @@
 require_once 'connection_db.php';
 
 // ==========================================
--- BLOQUE POST: GUARDAR LOS DATOS MODIFICADOS
+// BLOQUE POST: GUARDAR LOS DATOS MODIFICADOS
 // ==========================================
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Capturamos el ID del input oculto (hidden)
@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 // ==========================================
--- BLOQUE GET: CARGAR EL FORMULARIO DE EDICIÓN
+// BLOQUE GET: CARGAR EL FORMULARIO DE EDICIÓN
 // ==========================================
 if (isset($_GET['id']) && !empty($_GET['id'])) {
     $id = (int)$_GET['id'];
